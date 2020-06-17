@@ -1,12 +1,14 @@
 @font-face {
     font-family: 'Source Sans Pro';
     src: url(../fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf);
+    font-display: swap;
 }
 
-:root, body {
+:root.spectrum, body {
     margin: 0;
     padding: 0;
     font-family: 'Source Sans Pro', sans-serif;
+    background: #252525;
 }
 
 header#menu h1 {
@@ -19,7 +21,7 @@ header#menu h2 {
 
 header#menu h1, header#menu h2 {
     text-align: center;
-    background: #252525;
+    background: #212121;
     color: #FFFFFF;
 }
 
@@ -35,9 +37,9 @@ nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background: #252525;
-    border-top: 1px solid #323232;
-    border-bottom: 1px solid #323232;
+    background: #212121;
+    border-top: 1px solid #252525;
+    border-bottom: 1px solid #252525;
 }
 
 nav li {
@@ -48,22 +50,30 @@ nav a {
     text-decoration: none;
     display: inline-block;
     padding: 8px 12px;
-    color: #D0D0D0;
+    color: #c9c9c9;
 }
 
 nav a:hover {
-    color: #ffffff;
+    color: #4b9cf5;
 }
 
 #tech span{
+    display: inline-block;
     margin: 1px;
+    border: 1px solid #4b9cf5;
+    border-radius: 20px;
+    padding: 4px 14px;
 }
 
 section{
     margin: 1%;
 }
 
-article ul {
+section.spectrum {
+    background: #252525;
+}
+
+article ul , td.spectrum-Table-cell ul {
     list-style-type: square;
 }
 
@@ -78,7 +88,7 @@ article a:hover {
 }
 a.button, a.button:visited {
     border-color: #4b9cf5;
-    background: #323232;
+    background: #252525;
     color: #4b9cf5;
 }
 
@@ -86,13 +96,13 @@ a.button:hover{
     text-decoration: none;
     background: #4b9cf5;
     border-color: #4b9cf5;
-    color: #323232;
+    color: #252525;
 }
 
 footer {
     text-align: center;
     color: #FFFFFF;
-    background: #252525;
+    background: #212121;
     margin: 0;
     margin-top: 5px;
 }
@@ -102,4 +112,41 @@ a.external {
     background-repeat: no-repeat;
     background-image: linear-gradient(transparent,transparent),url(/img/external_link.svg);
     padding-left: 16px;
+}
+
+#cards {
+    display: block;
+}
+
+a.card {
+    display: inline-block;
+    max-width: 240px;
+    margin: 4px;
+}
+
+a.card:hover {
+    text-decoration: none;
+    border: 1px solid #4b9cf5;
+}
+
+a.card div.spectrum-Card-coverPhoto {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #252525;
+}
+
+a.card .spectrum-Card-title {
+    color: #4b9cf5;
+}
+
+a.card * {
+    display: block;
+    text-align: center;
+    border: none;
+}
+
+@media only screen and (max-width: 600px) {
+    #cards {
+        text-align: center;
+    }
 }

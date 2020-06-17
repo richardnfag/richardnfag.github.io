@@ -12,14 +12,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Richard do Nascimento Fagundes</title>
-    <link rel="stylesheet" href="node_modules/@spectrum-css/vars/dist/spectrum-global.css">
-    <link rel="stylesheet" href="node_modules/@spectrum-css/vars/dist/spectrum-medium.css">
-    <link rel="stylesheet" href="node_modules/@spectrum-css/vars/dist/spectrum-dark.css">
-    <link rel="stylesheet" href="node_modules/@spectrum-css/page/dist/index-vars.css">
-    <link rel="stylesheet" href="node_modules/@spectrum-css/button/dist/index-vars.css">
-    <link rel="stylesheet" href="node_modules/@spectrum-css/table/dist/index-vars.css">
-    <link rel="stylesheet" href="node_modules/@spectrum-css/typography/dist/index-vars.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="/node_modules/@spectrum-css/vars/dist/spectrum-global.css">
+    <link rel="stylesheet" href="/node_modules/@spectrum-css/vars/dist/spectrum-medium.css">
+    <link rel="stylesheet" href="/node_modules/@spectrum-css/vars/dist/spectrum-dark.css">
+    <link rel="stylesheet" href="/node_modules/@spectrum-css/page/dist/index-vars.css">
+    <link rel="stylesheet" href="/node_modules/@spectrum-css/button/dist/index-vars.css">
+    <link rel="stylesheet" href="/node_modules/@spectrum-css/table/dist/index-vars.css">
+    <link rel="stylesheet" href="/node_modules/@spectrum-css/typography/dist/index-vars.css">
+    <link rel="stylesheet" href="/node_modules/@spectrum-css/card/dist/index-vars.css">
+    <link rel="stylesheet" href="/css/main.css">
     <meta name="theme-color" content="#252525" />
     <meta name="description" content="Portfolio Richard do Nascimento Fagundes">
     <meta name="keywords" content="currículo,curriculum,CV,portfolio,Richard,Nascimento,Fagundes">
@@ -51,7 +52,7 @@
             Em um mundo dinâmico e rico em conhecimento,
             um dos meus maiores prazeres é aprender algo novo.
             <h3>Formação Acadêmica</h3>
-            <table class="spectrum-Table spectrum-Table">
+            <table class="spectrum-Table">
                 <tbody class="spectrum-Table-body">
                     <tr class="spectrum-Table-row">
                         <td class="spectrum-Table-cell"><b>Pós-Graduação</b> UNILINS, Lins/SP</td>
@@ -70,7 +71,7 @@
                 </tbody>
             </table>
             <h3>Experiência Profissional</h3>
-            <table class="spectrum-Table spectrum-Table">
+            <table class="spectrum-Table">
                 <tbody class="spectrum-Table-body">
                     <tr class="spectrum-Table-row">
                         <td class="spectrum-Table-cell"><b>Estágio na Pró-Reitoria de Pesquisa</b> UNILINS, Lins/SP</td>
@@ -78,17 +79,19 @@
                     </tr>
                     <tr class="spectrum-Table-row">
                         <td class="spectrum-Table-cell" colspan="2">
-                            Manutenção de sites; <br>
-                            Suporte aos alunos e professores; <br>
-                            Desenvolvimento de sistemas; <br>
-                            Organização de eventos; <br>
-                            Design gráfico.
+                            <ul>
+                                <li>Manutenção de sites;</li>
+                                <li>Suporte aos alunos e professores;</li>
+                                <li>Desenvolvimento de sistemas;</li>
+                                <li>Organização de eventos;</li>
+                                <li>Design gráfico.</li>
+                            </ul>
                         </td>
                     </tr>
                 </tbody>
             </table>
             <h3>Premiações e Atividades Complementares</h3>
-            <table class="spectrum-Table spectrum-Table">
+            <table class="spectrum-Table">
                 <tbody class="spectrum-Table-body">
                     <tr class="spectrum-Table-row">
                         <td class="spectrum-Table-cell"><b>UNILINS,</b> Lins/SP</td>
@@ -128,7 +131,7 @@
             </header>
             <section id="projects_content">
                 <a href="https://github.com/richardnas"><h3>Projetos no GitHub</h3></a>
-                <table class="spectrum-Table spectrum-Table" id="github_projects"></table>
+                <table class="spectrum-Table" id="github_projects"></table>
                 <a href="https://gist.github.com/richardnas"><h3>Trechos de códigos no GitHub Gists</h3></a>
             </section>
         </article>
@@ -147,33 +150,135 @@
                 </ul>
                 <h3>Tecnologias e ferramentas</h3>
                 <p id="tech">
-                    <span class="spectrum-Button spectrum-Button--secondary">C</span>
-                    <span class="spectrum-Button spectrum-Button--secondary">HTML</span>
-                    <span class="spectrum-Button spectrum-Button--secondary">CSS</span>
-                    <span class="spectrum-Button spectrum-Button--secondary">Ruby</span>
-                    <span class="spectrum-Button spectrum-Button--secondary">JavaScript</span>
-                    <span class="spectrum-Button spectrum-Button--secondary">Python</span>
-                    <span class="spectrum-Button spectrum-Button--secondary">Rust</span>
-                    <span class="spectrum-Button spectrum-Button--secondary">Golang</span>
-                    <span class="spectrum-Button spectrum-Button--secondary">Redis</span>
-                    <span class="spectrum-Button spectrum-Button--secondary">Docker</span>
-                    <span class="spectrum-Button spectrum-Button--secondary">Git</span>
-                    <span class="spectrum-Button spectrum-Button--secondary">Websockets</span>
-                    <span class="spectrum-Button spectrum-Button--secondary">Microservices</span>
-                    <span class="spectrum-Button spectrum-Button--secondary">FaaS</span>
-                    <span class="spectrum-Button spectrum-Button--secondary">BaaS</span>
-                    <span class="spectrum-Button spectrum-Button--secondary">PaaS</span>
-                    <span class="spectrum-Button spectrum-Button--secondary">IaaS</span>
+                    <span>C</span>
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>Ruby</span>
+                    <span>JavaScript</span>
+                    <span>Python</span>
+                    <span>Rust</span>
+                    <span>Golang</span>
+                    <span>Redis</span>
+                    <span>Docker</span>
+                    <span>Git</span>
+                    <span>Websockets</span>
+                    <span>Microservices</span>
+                    <span>FaaS</span>
+                    <span>BaaS</span>
+                    <span>PaaS</span>
+                    <span>IaaS</span>
                 </p>
                 <h3>Certificados</h3>
-                <a class="external" rel="noreferrer" href="https://www.coursera.org/account/accomplishments/records/47AS425Y4Y23?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course" target="_blank">Machine Learning for Business Professionals</a><br>
-                <a class="external" rel="noreferrer" href="https://www.coursera.org/account/accomplishments/records/YD7JTGBER986?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course" target="_blank">Industrial IoT on Google Cloud Platform</a><br>
-                <a class="external" rel="noreferrer" href="https://www.coursera.org/account/accomplishments/records/Y2UHBQ6XAPG5?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course" target="_blank">Building Conversational Experiences with Dialogflow</a><br>
-                <a class="external" rel="noreferrer" href="https://www.youracclaim.com/badges/a143b2b3-18d5-4691-a490-35dacda956d6/public_url" target="_blank">z/OS Introduction Workshop</a><br>
-                <a class="external" rel="noreferrer" href="https://university.redislabs.com/certificates/user/45172/course/course-v1:redislabs+RU101+2020_02" target="_blank">Introduction to Redis Data Structures</a><br>
-                <a class="external" rel="noreferrer" href="https://university.redislabs.com/certificates/user/45172/course/course-v1:redislabs+RU102J+2020_02" target="_blank">Redis for Java Developers</a><br>
-                <a class="external" rel="noreferrer" href="https://university.redislabs.com/certificates/user/45172/course/course-v1:redislabs+RU202+2020_02" target="_blank">Redis Streams</a><br>
-                <a class="external" rel="noreferrer" href="https://university.redislabs.com/certificates/user/45172/course/course-v1:redislabs+RU201+2020_02" target="_blank">RediSearch</a><br>
+                <div id="cards">
+                    <a class="card spectrum-Card" rel="noreferrer" href="https://www.youracclaim.com/badges/8b2533af-76ae-4fa9-801a-b845ac594e7a/public_url" target="_blank">
+                        <div class="spectrum-Card-coverPhoto" style="background-image: url(/img/deep-learning-essentials.png)"></div>
+                        <div class="spectrum-Card-body">
+                            <div class="spectrum-Card-header">
+                            <div class="spectrum-Card-title">Deep Learning Essentials</div>
+                            </div>
+                        </div>
+                        <div class="spectrum-Card-footer">IBM</div>
+                    </a>
+                    <a class="card spectrum-Card" rel="noreferrer" href="https://www.youracclaim.com/badges/7096e673-99f4-4cb9-bc86-86ecded75c3c/public_url" target="_blank">
+                        <div class="spectrum-Card-coverPhoto" style="background-image: url(/img/scala-programming-for-data-science-level-1.png)"></div>
+                        <div class="spectrum-Card-body">
+                            <div class="spectrum-Card-header">
+                            <div class="spectrum-Card-title">Scala Programming for Data Science - Level 1</div>
+                            </div>
+                        </div>
+                        <div class="spectrum-Card-footer">IBM</div>
+                    </a>
+                    <a class="card spectrum-Card" rel="noreferrer" href="https://www.youracclaim.com/badges/75f346a1-b51a-4697-8182-d7cffb8d9d61/public_url" target="_blank">
+                        <div class="spectrum-Card-coverPhoto" style="background-image: url(/img/python-for-data-science.png)"></div>
+                        <div class="spectrum-Card-body">
+                            <div class="spectrum-Card-header">
+                            <div class="spectrum-Card-title">Python for Data Science</div>
+                            </div>
+                        </div>
+                        <div class="spectrum-Card-footer">IBM</div>
+                    </a>
+                    <a class="card spectrum-Card" rel="noreferrer" href="https://www.coursera.org/account/accomplishments/records/47AS425Y4Y23?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course" target="_blank">
+                        <div class="spectrum-Card-coverPhoto" style="background-image: url(/img/coursera.png);"></div>
+                        <div class="spectrum-Card-body">
+                            <div class="spectrum-Card-header">
+                            <div class="spectrum-Card-title">Machine Learning for Business Professionals</div>
+                            </div>
+                        </div>
+                        <div class="spectrum-Card-footer">Coursera</div>
+                    </a>
+                    <a class="card spectrum-Card" rel="noreferrer" href="https://www.coursera.org/account/accomplishments/records/YQTQ4YC3QKLY?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course" target="_blank">
+                        <div class="spectrum-Card-coverPhoto" style="background-image: url(/img/coursera.png)"></div>
+                        <div class="spectrum-Card-body">
+                            <div class="spectrum-Card-header">
+                            <div class="spectrum-Card-title">Getting Started with AWS Machine Learning</div>
+                            </div>
+                        </div>
+                        <div class="spectrum-Card-footer">Coursera</div>
+                    </a>
+                    <a class="card spectrum-Card" rel="noreferrer" href="https://www.coursera.org/account/accomplishments/records/YD7JTGBER986?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course" target="_blank">
+                        <div class="spectrum-Card-coverPhoto" style="background-image: url(/img/coursera.png)"></div>
+                        <div class="spectrum-Card-body">
+                            <div class="spectrum-Card-header">
+                            <div class="spectrum-Card-title">Industrial IoT on Google Cloud Platform</div>
+                            </div>
+                        </div>
+                        <div class="spectrum-Card-footer">Coursera</div>
+                    </a>
+                    <a class="card spectrum-Card" rel="noreferrer" href="https://www.coursera.org/account/accomplishments/records/Y2UHBQ6XAPG5?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course" target="_blank">
+                        <div class="spectrum-Card-coverPhoto" style="background-image: url(/img/coursera.png)"></div>
+                        <div class="spectrum-Card-body">
+                            <div class="spectrum-Card-header">
+                            <div class="spectrum-Card-title">Building Conversational Experiences with Dialogflow</div>
+                            </div>
+                        </div>
+                        <div class="spectrum-Card-footer">Coursera</div>
+                    </a>
+                    <a class="card spectrum-Card" rel="noreferrer" href="https://www.youracclaim.com/badges/a143b2b3-18d5-4691-a490-35dacda956d6/public_url" target="_blank">
+                        <div class="spectrum-Card-coverPhoto" style="background-image: url(/img/z-os-introduction-workshop.png)"></div>
+                        <div class="spectrum-Card-body">
+                            <div class="spectrum-Card-header">
+                            <div class="spectrum-Card-title">z/OS Introduction Workshop</div>
+                            </div>
+                        </div>
+                        <div class="spectrum-Card-footer">IBM</div>
+                    </a>
+                    <a class="card spectrum-Card" rel="noreferrer" href="https://university.redislabs.com/certificates/user/45172/course/course-v1:redislabs+RU101+2020_02" target="_blank">
+                        <div class="spectrum-Card-coverPhoto" style="background-image: url(/img/redis.png)"></div>
+                        <div class="spectrum-Card-body">
+                            <div class="spectrum-Card-header">
+                            <div class="spectrum-Card-title">Introduction to Redis Data Structures</div>
+                            </div>
+                        </div>
+                        <div class="spectrum-Card-footer">Redis</div>
+                    </a>
+                    <a class="card spectrum-Card" rel="noreferrer" href="https://university.redislabs.com/certificates/user/45172/course/course-v1:redislabs+RU102J+2020_02" target="_blank">
+                        <div class="spectrum-Card-coverPhoto" style="background-image: url(/img/redis.png)"></div>
+                        <div class="spectrum-Card-body">
+                            <div class="spectrum-Card-header">
+                            <div class="spectrum-Card-title">Redis for Java Developers</div>
+                            </div>
+                        </div>
+                        <div class="spectrum-Card-footer">Redis</div>
+                    </a>
+                    <a class="card spectrum-Card" rel="noreferrer" href="https://university.redislabs.com/certificates/user/45172/course/course-v1:redislabs+RU202+2020_02" target="_blank">
+                        <div class="spectrum-Card-coverPhoto" style="background-image: url(/img/redis.png)"></div>
+                        <div class="spectrum-Card-body">
+                            <div class="spectrum-Card-header">
+                            <div class="spectrum-Card-title">Redis Streams</div>
+                            </div>
+                        </div>
+                        <div class="spectrum-Card-footer">Redis</div>
+                    </a>
+                    <a class="card spectrum-Card" rel="noreferrer" href="https://university.redislabs.com/certificates/user/45172/course/course-v1:redislabs+RU201+2020_02" target="_blank">
+                        <div class="spectrum-Card-coverPhoto" style="background-image: url(/img/redis.png)"></div>
+                        <div class="spectrum-Card-body">
+                            <div class="spectrum-Card-header">
+                            <div class="spectrum-Card-title">RediSearch</div>
+                            </div>
+                        </div>
+                        <div class="spectrum-Card-footer">Redis</div>  
+                    </a>
+                </div>
             </section>
         </article>
         <article id="contact" class="spectrum-Body spectrum-Body--M">
