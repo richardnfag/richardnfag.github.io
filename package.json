@@ -9,7 +9,6 @@
   "author": "Richard do Nascimento Fagundes",
   "dependencies": {
     "@spectrum-css/button": "3.0.0-beta.2",
-    "@spectrum-css/card": "^3.0.0-beta.2",
     "@spectrum-css/page": "2.0.7",
     "@spectrum-css/table": "3.0.0-beta.2",
     "@spectrum-css/typography": "2.1.3",

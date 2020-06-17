@@ -57,7 +57,7 @@ nav a:hover {
     color: #4b9cf5;
 }
 
-#tech span{
+#tech span {
     display: inline-block;
     margin: 1px;
     border: 1px solid #4b9cf5;
@@ -112,41 +112,4 @@ a.external {
     background-repeat: no-repeat;
     background-image: linear-gradient(transparent,transparent),url(/img/external_link.svg);
     padding-left: 16px;
-}
-
-#cards {
-    display: block;
-}
-
-a.card {
-    display: inline-block;
-    max-width: 240px;
-    margin: 4px;
-}
-
-a.card:hover {
-    text-decoration: none;
-    border: 1px solid #4b9cf5;
-}
-
-a.card div.spectrum-Card-coverPhoto {
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-color: #252525;
-}
-
-a.card .spectrum-Card-title {
-    color: #4b9cf5;
-}
-
-a.card * {
-    display: block;
-    text-align: center;
-    border: none;
-}
-
-@media only screen and (max-width: 600px) {
-    #cards {
-        text-align: center;
-    }
 }
