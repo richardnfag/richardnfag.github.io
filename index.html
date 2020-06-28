@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR" class="spectrum spectrum--medium spectrum--dark">
+<html lang="pt-BR">
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159816233-1"></script>
@@ -12,15 +12,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Richard do Nascimento Fagundes</title>
-    <link rel="stylesheet" href="/node_modules/@spectrum-css/vars/dist/spectrum-global.css">
-    <link rel="stylesheet" href="/node_modules/@spectrum-css/vars/dist/spectrum-medium.css">
-    <link rel="stylesheet" href="/node_modules/@spectrum-css/vars/dist/spectrum-dark.css">
-    <link rel="stylesheet" href="/node_modules/@spectrum-css/page/dist/index-vars.css">
-    <link rel="stylesheet" href="/node_modules/@spectrum-css/button/dist/index-vars.css">
-    <link rel="stylesheet" href="/node_modules/@spectrum-css/table/dist/index-vars.css">
-    <link rel="stylesheet" href="/node_modules/@spectrum-css/typography/dist/index-vars.css">
-    <link rel="stylesheet" href="/css/main.css">
-    <meta name="theme-color" content="#252525" />
+    <link rel="stylesheet" href="/css/main.css?v=1.0">
+    <meta name="theme-color" content="#0f0f0f" />
     <meta name="description" content="Portfolio Richard do Nascimento Fagundes">
     <meta name="keywords" content="currículo,curriculum,CV,portfolio,Richard,Nascimento,Fagundes">
     <meta name="author" content="Richard do Nascimento Fagundes">
@@ -28,11 +21,12 @@
 <body>
     <header id="menu">
         <hgroup>
-            <h1 class="spectrum-Heading spectrum-Heading--L">Richard do Nascimento Fagundes</h1>
-            <h2 class="spectrum-Heading spectrum-Heading--XS">Desenvolvedor de software</h2>
+            <h1>Richard do Nascimento Fagundes</h1>
+            <h2>Desenvolvedor de software</h2>
         </hgroup>
+        <canvas id="canvas-particles"></canvas>
     </header>
-    <nav class="spectrum spectrum-Body spectrum-Body--M">
+    <nav>
         <ul>
             <li><a id="menu_about" href="#about">Sobre</a></li>
             <li><a id="menu_projects" href="#projects">Projetos</a></li>
@@ -40,8 +34,8 @@
             <li><a id="menu_contact" href="#contact">Contato</a></li>
         </ul>
     </nav>
-    <section class="spectrum">
-        <article id="about" class="spectrum-Body spectrum-Body--M">
+    <section id="main">
+        <article id="about">
             <header>
                 <h1>Sobre</h1>
             </header>
@@ -51,90 +45,90 @@
             Em um mundo dinâmico e rico em conhecimento,
             um dos meus maiores prazeres é aprender algo novo.
             <h3>Formação Acadêmica</h3>
-            <table class="spectrum-Table">
-                <tbody class="spectrum-Table-body">
-                    <tr class="spectrum-Table-row">
-                        <td class="spectrum-Table-cell"><b>Pós-Graduação</b> UNILINS, Lins/SP</td>
-                        <td class="spectrum-Table-cell">2019 – Atualmente</td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td><b>Pós-Graduação</b> UNILINS, Lins/SP</td>
+                        <td>2019 – Atualmente</td>
                     </tr>
-                    <tr class="spectrum-Table-row">
-                        <td class="spectrum-Table-cell" colspan="2">MBA em Negócios Empresariais</td>
+                    <tr>
+                        <td colspan="2">MBA em Negócios Empresariais</td>
                     </tr>
-                    <tr class="spectrum-Table-row">
-                        <td class="spectrum-Table-cell"><b>Graduação</b> UNILINS, Lins/SP</td>
-                        <td class="spectrum-Table-cell">2015 – 2018</td>
+                    <tr>
+                        <td><b>Graduação</b> UNILINS, Lins/SP</td>
+                        <td>2015 – 2018</td>
                     </tr>
-                    <tr class="spectrum-Table-row">
-                        <td class="spectrum-Table-cell" colspan="2">Tecnologia em Análise e Desenvolvimento de Sistemas</td>
+                    <tr>
+                        <td colspan="2">Tecnologia em Análise e Desenvolvimento de Sistemas</td>
                     </tr>
                 </tbody>
             </table>
             <h3>Experiência Profissional</h3>
-            <table class="spectrum-Table">
-                <tbody class="spectrum-Table-body">
-                    <tr class="spectrum-Table-row">
-                        <td class="spectrum-Table-cell"><b>Estágio na Pró-Reitoria de Pesquisa</b> UNILINS, Lins/SP</td>
-                        <td class="spectrum-Table-cell">2017 – 2018</td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td><b>Estágio na Pró-Reitoria de Pesquisa</b> UNILINS, Lins/SP</td>
+                        <td>2017 – 2018</td>
                     </tr>
-                    <tr class="spectrum-Table-row">
-                        <td class="spectrum-Table-cell" colspan="2">
-                            <ul>
-                                <li>Manutenção de sites;</li>
-                                <li>Suporte aos alunos e professores;</li>
-                                <li>Desenvolvimento de sistemas;</li>
-                                <li>Organização de eventos;</li>
-                                <li>Design gráfico.</li>
-                            </ul>
+                    <tr>
+                        <td colspan="2">
+                            
+                        Manutenção de sites; <br>
+                        Suporte aos alunos e professores; <br>
+                        Desenvolvimento de sistemas; <br>
+                        Organização de eventos; <br>
+                        Design gráfico. <br>
+                            
                         </td>
                     </tr>
                 </tbody>
             </table>
             <h3>Premiações e Atividades Complementares</h3>
-            <table class="spectrum-Table">
-                <tbody class="spectrum-Table-body">
-                    <tr class="spectrum-Table-row">
-                        <td class="spectrum-Table-cell"><b>UNILINS,</b> Lins/SP</td>
-                        <td class="spectrum-Table-cell">2019</td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td><b>UNILINS,</b> Lins/SP</td>
+                        <td>2019</td>
                     </tr>
-                    <tr class="spectrum-Table-row">
-                        <td class="spectrum-Table-cell" colspan="2">Performance de Melhor Aluno no curso de Tecnologia em Análise e Desenvolvimento de Sistemas no 2° semestre de 2018</td>
+                    <tr>
+                        <td colspan="2">Performance de Melhor Aluno no curso de Tecnologia em Análise e Desenvolvimento de Sistemas no 2° semestre de 2018</td>
                     </tr>
-                    <tr class="spectrum-Table-row">
-                        <td class="spectrum-Table-cell"><b>Pró-Reitoria de Pesquisa</b> UNILINS, Lins/SP</td>
-                        <td class="spectrum-Table-cell">2018</td>
+                    <tr>
+                        <td><b>Pró-Reitoria de Pesquisa</b> UNILINS, Lins/SP</td>
+                        <td>2018</td>
                     </tr>
-                    <tr class="spectrum-Table-row">
-                        <td class="spectrum-Table-cell" colspan="2">Membro da comissão organizadora do 19° CONECTE (Congresso de Educação, Ciência e Tecnologia)</td>
+                    <tr>
+                        <td colspan="2">Membro da comissão organizadora do 19° CONECTE (Congresso de Educação, Ciência e Tecnologia)</td>
                     </tr>
-                    <tr class="spectrum-Table-row">
-                        <td class="spectrum-Table-cell"><b>Pró-Reitoria de Pesquisa</b> UNILINS, Lins/SP</td>
-                        <td class="spectrum-Table-cell">2018</td>
+                    <tr>
+                        <td><b>Pró-Reitoria de Pesquisa</b> UNILINS, Lins/SP</td>
+                        <td>2018</td>
                     </tr>
-                    <tr class="spectrum-Table-row">
-                        <td class="spectrum-Table-cell" colspan="2">Membro da comissão organizadora do 21° Simpósio de Iniciação Científica</td>
+                    <tr>
+                        <td colspan="2">Membro da comissão organizadora do 21° Simpósio de Iniciação Científica</td>
                     </tr>
-                    <tr class="spectrum-Table-row">
-                        <td class="spectrum-Table-cell"><b>Pró-Reitoria de Extensão e Ação Comunitária</b> UNILINS, Lins/SP</td>
-                        <td class="spectrum-Table-cell">2018</td>
+                    <tr>
+                        <td><b>Pró-Reitoria de Extensão e Ação Comunitária</b> UNILINS, Lins/SP</td>
+                        <td>2018</td>
                     </tr>
-                    <tr class="spectrum-Table-row">
-                        <td class="spectrum-Table-cell" colspan="2">Educador no curso: Linguagem Programação Go e Desenvolvimento Web</td>
+                    <tr>
+                        <td colspan="2">Educador no curso: Linguagem Programação Go e Desenvolvimento Web</td>
                     </tr>
                 </tbody>
             </table>
             </section>
         </article>
-        <article id="projects" class="spectrum-Body spectrum-Body--M">
+        <article id="projects">
             <header>
                 <h1>Projetos</h1>
             </header>
             <section id="projects_content">
                 <a href="https://github.com/richardnas"><h3>Projetos no GitHub</h3></a>
-                <table class="spectrum-Table" id="github_projects"></table>
+                <table id="github_projects"></table>
                 <a href="https://gist.github.com/richardnas"><h3>Trechos de códigos no GitHub Gists</h3></a>
             </section>
         </article>
-        <article id="skills" class="spectrum-Body spectrum-Body--M">
+        <article id="skills">
             <header>
                 <h1>Habilidades</h1>
             </header>
@@ -183,22 +177,22 @@
                     <a class="external" rel="noreferrer" href="https://university.redislabs.com/certificates/user/45172/course/course-v1:redislabs+RU102J+2020_02" target="_blank">Redis for Java Developers</a><br>
                     <a class="external" rel="noreferrer" href="https://university.redislabs.com/certificates/user/45172/course/course-v1:redislabs+RU202+2020_02" target="_blank">Redis Streams</a><br>
                     <a class="external" rel="noreferrer" href="https://university.redislabs.com/certificates/user/45172/course/course-v1:redislabs+RU201+2020_02" target="_blank">RediSearch</a><br>
-                
             </section>
         </article>
-        <article id="contact" class="spectrum-Body spectrum-Body--M">
+        <article id="contact">
             <header>
                 <h1>Contato</h1>
             </header>
             <section>
                 Linkedin: <br>
-                <a class="button spectrum-Button spectrum-Button--cta" href="https://www.linkedin.com/in/richardnas/">linkedin.com/in/richardnas</a><br>
+                <a class="button" href="https://www.linkedin.com/in/richardnas/">linkedin.com/in/richardnas</a><br>
                 E-mail: <br>
-                <a class="button spectrum-Button spectrum-Button--cta" href="mailto:richardnas_@outlook.com">richardnas_@outlook.com</a><br>
+                <a class="button" href="mailto:richardnas_@outlook.com">richardnas_@outlook.com</a><br>
             </section>
         </article>
     </section>
-    <footer class="spectrum-Body spectrum-Body--M">&copy; Richard do Nascimento Fagundes</footer>
+    <footer>&copy; Richard do Nascimento Fagundes</footer>
 </body>
-<script src="js/github.js"></script>
+<script src="/js/particles.js?v=1.0"></script>
+<script src="js/github.js?v=1.0"></script>
 </html>

@@ -9,14 +9,14 @@ xhr.onreadystatechange = function() {
         
         projects_content.innerHTML =
             res.reduce(function (all, v) {
-                return all + '<tr class="spectrum-Table-row"><td class="spectrum-Table-cell">'
+                return all + '<tr><td>'
                     +'<a href=\"'+ v.html_url + '\">' + v.name + '<a/></td>'
-                    + '<td class="spectrum-Table-cell">' + v.description + '</td></tr>' 
-            }, '<tbody class="spectrum-Table-body">'
-                +'<tr class="spectrum-Table-row">'
-                +'<th class="spectrum-Table-headCell">Projeto</th>'
-                +'<th class="spectrum-Table-headCell">Descrição</th>'
-                +'</tr><tr class="spectrum-Table-row">') + '</tr></tbody>';
+                    + '<td>' + v.description + '</td></tr>' 
+            }, '<tbody>'
+                +'<tr>'
+                +'<th>Projeto</th>'
+                +'<th>Descrição</th>'
+                +'</tr><tr>') + '</tr></tbody>';
         
     }
 }
