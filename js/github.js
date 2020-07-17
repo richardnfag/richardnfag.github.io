@@ -9,12 +9,12 @@ xhr.onreadystatechange = function() {
         
         projects_content.innerHTML =
             res.reduce(function (all, v) {
-                return all + '<tr><td>'
+                return (!v.fork) ? all + '<tr><td>'
                     +'<a href=\"'+ v.html_url + '\">' + v.name + '<a/></td>'
-                    + '<td>' + v.description + '</td></tr>' 
+                    + '<td>' + v.description + '</td></tr>' : all
             }, '<tbody>'
                 +'<tr>'
-                +'<th>Projeto</th>'
+                +'<th>Repositório</th>'
                 +'<th>Descrição</th>'
                 +'</tr><tr>') + '</tr></tbody>';
         
