@@ -33,7 +33,7 @@ function Particle() {
     this.radius = 3;
     
     this.draw = () => {
-        ctx.fillStyle = "rgba(50, 50, 50, 1)";
+        ctx.fillStyle = "rgba(70, 70, 70, 1)";
         ctx.beginPath();
         ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
         ctx.fill();
@@ -49,7 +49,7 @@ const initialize = () => {
 }
 
 const draw = () => {
-    ctx.fillStyle = "rgba(15,15,15,1)";
+    ctx.fillStyle = "rgba(0,0,0,1)";
     ctx.fillRect(0, 0, canvas.width, canvas.height);
     
     particles.forEach((p) => p.draw() );
@@ -89,7 +89,7 @@ const distance = (p1, p2) => {
     if(dist <= minDist) {
         
         ctx.beginPath();
-        ctx.strokeStyle = "rgba(50, 50, 50, "+ (1.2-dist/minDist) +")";
+        ctx.strokeStyle = "rgba(70, 70, 70, "+ (1.2-dist/minDist) +")";
         ctx.moveTo(p1.x, p1.y);
         ctx.lineTo(p2.x, p2.y);
         ctx.stroke();
