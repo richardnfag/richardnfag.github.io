@@ -14,7 +14,7 @@ const setCookieValue = (name, value, days) => {
     let expires = '; Expires=' + date.toGMTString();
     let domain = '; Domain=' + window.location.hostname;
 
-    document.cookie = name + '=' + value + expires +  domain + '; SameSite=Strict';
+    document.cookie = name + '=' + value + expires +  domain + '; Path=/ ; SameSite=Strict';
 };
 
 let dm_cookie = getCookieValue("dark-mode");
