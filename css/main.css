@@ -61,7 +61,7 @@ nav a:hover {
     color: #ffffff;
 }
 
-nav button#theme-button {
+button#theme-button {
     background: none;
     border: none;
     margin: 0;
@@ -69,21 +69,21 @@ nav button#theme-button {
     display: inline-block;
 }
 
-nav button#theme-button svg {
+button#theme-button svg {
     font-size: 14px;
     color: #c9c9c9;
     margin-bottom: -7px;
 }
 
-nav button#theme-button svg:hover {
-    color: #ffe240;
+button#theme-button svg:hover {
+    color: #f5df4d;
     cursor: pointer;
 }
 
 #tech span {
     display: inline-block;
     margin: 1px;
-    border: 1px solid #0d66d0;
+    border: 1px solid #295080;
     border-radius: 20px;
     padding: 4px 14px;
 }
@@ -102,7 +102,7 @@ article ul , td ul {
 }
 
 article a, article a:visited {
-    color: #0d66d0;
+    color: #295080;
     text-decoration: none;
 }
 
@@ -112,10 +112,10 @@ article a:hover {
 
 a.button, a.button:visited {
     display: inline-block;
-    border: 2px solid #0d66d0;
+    border: 2px solid #295080;
     border-radius: 20px;
     background: #f4f4f4;
-    color: #0d66d0;
+    color: #295080;
     font-size: 14px;
     font-weight: 600;
     padding: 5px 12px;
@@ -123,8 +123,8 @@ a.button, a.button:visited {
 
 a.button:hover {
     text-decoration: none;
-    background: #0d66d0;
-    border-color: #0d66d0;
+    background: #295080;
+    border-color: #295080;
     color: #f4f4f4;
 }
 
@@ -145,24 +145,25 @@ a.external {
 
 a.active-button, a.active-button:visited {
     display: inline-block;
-    background: #080808;
+    background: #f4f4f4;
     font-size: 14px;
-    padding: 6px 40px;
-    border: 1px solid #4b9cf5;
-    color: #4b9cf5;
+    padding: 6px 35px;
+    border: 1px solid #295080;
+    color: #295080;
     border-radius: 2px;
     cursor: pointer;
     text-decoration: none;
 }
 
 a.active-button:hover {
-    background: #000000;
+    background: #295080;
+    color: #f4f4f4;
     text-decoration: none;
 }
 
 a.active-button:active, a.active-button:focus {
-    background-color: #4b9cf5;
-    color: #080808;
+    background-color: #295080;
+    color: #f4f4f4;
 }
 
 #canvas-particles {
@@ -191,7 +192,7 @@ tr {
 }
 
 tr:hover {
-    background-color: #00000008;
+    background-color: rgba(0, 0, 0, 0.03);
 }
 
 td {
@@ -237,6 +238,16 @@ body.dark-mode a.button:hover {
 
 body.dark-mode a.external {
     background-image: linear-gradient(transparent,transparent),url(/img/external_link_dark.svg);
+}
+
+body.dark-mode a.active-button, body.dark-mode a.active-button:visited{
+    border-color: #4b9cf5;
+    background-color: #0d0d0d;
+}
+
+body.dark-mode a.active-button:hover {
+    background: #4b9cf5;
+    color: #0d0d0d;
 }
 
 body.dark-mode table, body.dark-mode td {
