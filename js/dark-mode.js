@@ -30,22 +30,18 @@ button.addEventListener("click", () => {
     if (getCookieValue("dark-mode") == 'on') {
         setCookieValue('dark-mode', 'off', 365);
         button.innerHTML = moon;
-        console.log("OFF? " + document.cookie);
     } else {
         setCookieValue('dark-mode', 'on', 365);
         button.innerHTML = sun;
-        console.log("ON? " + document.cookie);
     }
 });
 
 switch (dm_cookie) {
     case 'on':
         body.add('dark-mode');
-        // body.remove('dark-light');
         break;
     case 'off':
         body.remove('dark-mode');
-        // body.add('dark-light');
         break;
     default:
         setCookieValue('dark-mode', 'on', 365);
