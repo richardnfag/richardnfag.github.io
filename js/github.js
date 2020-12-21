@@ -14,8 +14,8 @@ xhr.onreadystatechange = function() {
                     + '<td>' + v.description + '</td></tr>' : all
             }, '<tbody>'
                 +'<tr>'
-                +'<th>Repositório</th>'
-                +'<th>Descrição</th>'
+                +'<th>Repositories</th>'
+                +'<th>Description</th>'
                 +'</tr><tr>') + '</tr></tbody>';
         
     }
