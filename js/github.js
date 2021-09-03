@@ -21,5 +21,5 @@ xhr.onreadystatechange = function() {
     }
 }
 
-xhr.open('GET', 'https://api.github.com/users/richardnas/repos', true);
+xhr.open('GET', 'https://api.github.com/users/richardnfag/repos', true);
 xhr.send('');
