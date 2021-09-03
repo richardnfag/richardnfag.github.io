@@ -1,3 +1,3 @@
 ## My personal portfolio
 
-https://richardnas.github.io
+https://richardnfag.com
