@@ -9,16 +9,18 @@ window.requestAnimFrame = (() => {
             };
 })();
 
+const navSize = 36;
+
 let canvas = document.getElementById("canvas-particles");
 let ctx = canvas.getContext("2d");
 let particles = [];
 
 canvas.width = window.innerWidth;
-canvas.height = 150;
+canvas.height = window.innerHeight - navSize;
 
 window.addEventListener("resize", () => {
     canvas.width = window.innerWidth;
-    canvas.height = canvas.height;
+    canvas.height = window.innerHeight - navSize;
 
     initialize();
 });
@@ -40,73 +42,67 @@ function Particle() {
     }
 }
 
-const initialize = () => {
+function initialize() {
     particles = [];
 
-    Array(Math.floor(window.innerWidth/10)).fill().forEach(_ => 
-        particles.push(new Particle())
+    Array(Math.floor(window.innerWidth / 5)).fill().forEach(
+        _ => particles.push(new Particle())
     );
 }
 
-const draw = () => {
+function draw() {
     ctx.fillStyle = "rgba(0,0,0,1)";
     ctx.fillRect(0, 0, canvas.width, canvas.height);
-    
-    particles.forEach((p) => p.draw() );
+
+    particles.forEach((p) => p.draw());
 
     update();
 }
 
-const update = () => {
-    
-    particles.forEach((p,i) => {
-       
+function update() {
+
+    particles.forEach((p, i) => {
+
         p.x += p.vx;
-        p.y += p.vy
+        p.y += p.vy;
 
-        if(p.x + p.radius > canvas.width) p.x = p.radius;
-        if(p.y + p.radius > canvas.height) p.y = p.radius;
-        if(p.x - p.radius < 0) p.x = canvas.width - p.radius;
-        if(p.y - p.radius < 0) p.y = canvas.height - p.radius;
+        if (p.x + p.radius > canvas.width) p.x = p.radius;
+        if (p.y + p.radius > canvas.height) p.y = p.radius;
+        if (p.x - p.radius < 0) p.x = canvas.width - p.radius;
+        if (p.y - p.radius < 0) p.y = canvas.height - p.radius;
 
-        for(let j = i + 1; j < particles.length; j++) {
-            p2 = particles[j];
-            distance(p, p2);
+        for (let j = i + 1; j < particles.length; j++) {
+            distance(p, particles[j]);
         }
 
     });
 }
 
-const distance = (p1, p2) => {
-    let dist,
-        dx = p1.x - p2.x,
-        dy = p1.y - p2.y,
-        minDist = 100;
+function distance(p1, p2) {
+    let dist, dx = p1.x - p2.x, dy = p1.y - p2.y, minDist = 100;
 
-    
-    dist = Math.sqrt(dx*dx + dy*dy);
-            
-    if(dist <= minDist) {
-        
+    dist = Math.sqrt(dx * dx + dy * dy);
+
+    if (dist <= minDist) {
+
         ctx.beginPath();
-        ctx.strokeStyle = "rgba(70, 70, 70, "+ (1.2-dist/minDist) +")";
+        ctx.strokeStyle = "rgba(70, 70, 70, " + (1.2 - dist / minDist) + ")";
         ctx.moveTo(p1.x, p1.y);
         ctx.lineTo(p2.x, p2.y);
         ctx.stroke();
         ctx.closePath();
-        
-        let ax = dx / 10**10,
-            ay = dy / 10**10;
-        
+
+        let ax = dx / 10 ** 10, ay = dy / 10 ** 10;
+
         p1.vx -= ax;
         p1.vy -= ay;
-        
+
         p2.vx += ax;
         p2.vy += ay;
     }
 }
 
-const animloop = () => {
+function animloop() {
     draw();
     requestAnimFrame(animloop);
 }
