@@ -58,3 +58,12 @@ codeFences = true
 noClasses = true
 style = "xcode-dark"
 tabWidth = 4
+
+[services]
+[services.googleAnalytics]
+id = 'G-DQ21YR8079'
+
+[privacy]
+[privacy.googleAnalytics]
+disable = false
+respectDoNotTrack = false
