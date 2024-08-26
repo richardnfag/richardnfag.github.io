@@ -1,0 +1,7 @@
+<!-- Load Shared JS -->
+{{- $sharedJS := resources.Get "js/shared/shared.js" -}} {{- $sharedJS :=
+$sharedJS | js.Build (dict "minify" "true") -}}
+
+<script>
+    {{- $sharedJS.Content | safeJS -}}
+</script>

@@ -1,0 +1,132 @@
+<section id="about" class="section about py-5">
+    <div class="container">
+        {{ with .content.title }}
+        <h3
+            class="fs-1 fw-bold text-center text-primary pb-3 text-wrap text-break"
+        >
+            {{ . }}
+        </h3>
+        {{ end }}
+        <div class="row justify-content-center pb-5">
+            <p
+                class="text-center pb-3 text-wrap text-break fs-4 fw-semibold text-secondary"
+            >
+                Experiência Profissional
+            </p>
+            <div class="col-12 col-xl-6">
+                <table>
+                    {{ range .content.work }}
+                    <tr>
+                        <td class="py-5">
+                            <p class="m-0 p-0 fs-4 fw-semibold px-5">
+                                {{ .title }}
+                            </p>
+                            <p class="m-0 p-0 fs-6">
+                                <b>{{ .company }}</b><br />{{ .location }}
+                            </p>
+                            <p class="fs-6 m-2">{{ .period }}</p>
+                        </td>
+                    </tr>
+                    {{ end }}
+                </table>
+            </div>
+        </div>
+        <div class="row justify-content-center pb-5">
+            <p
+                class="m-6 text-center pb-3 text-wrap text-break fs-4 fw-semibold text-secondary"
+            >
+                Experiência Acadêmica
+            </p>
+            <div class="col-12 col-xl-6">
+                <table>
+                    {{ range .content.education }}
+                    <tr>
+                        <td class="py-5">
+                            <p class="m-0 p-0 fs-4 fw-semibold px-5">
+                                {{ .title }}
+                            </p>
+                            <p class="m-0 p-0 fs-6">
+                                <b>{{ .university }}</b><br />
+                                {{ .kind }}
+                            </p>
+                            <p class="fs-6 m-2">{{ .period }}</p>
+                        </td>
+                    </tr>
+                    {{ end }}
+                </table>
+            </div>
+        </div>
+        <div class="row justify-content-center pb-5">
+            <p
+                class="m-6 text-center pb-3 text-wrap text-break fs-4 fw-semibold text-secondary"
+            >
+                Cursos Extracurriculares
+            </p>
+            <div class="col-12 col-xl-6">
+                <table>
+                    {{ range .content.courses }}
+                    <tr>
+                        <td>
+                            <a
+                                href="{{ .certificate }}"
+                                target="_blank"
+                                class="m-0 p-0 fs-6 fw-semibold external-link"
+                            >
+                                <i
+                                    class="icon-small icon icon-ic_fluent_open_12_regular"
+                                ></i
+                                >{{ .title }}
+                            </a>
+                        </td>
+                    </tr>
+                    {{ end }}
+                </table>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <p
+                class="m-6 text-center pb-3 text-wrap text-break fs-4 fw-semibold text-secondary"
+            >
+                Badges
+            </p>
+            {{ range .content.badges }}
+            <div class="col-12 col-xl-3">
+                <div class="card badge text-wrap p-4 m-2">
+                    <img
+                        src="{{ .image_url }}"
+                        width="160"
+                        height="160"
+                        alt="{{ .title }} badge image"
+                        style="margin-left: auto; margin-right: auto"
+                    />
+
+                    <div class="card-body text-center">
+                        {{ with .title }}
+                        <h4 class="card-title fw-bold text-center text-white">
+                            {{ . }}
+                        </h4>
+                        {{ end }}
+                        <a
+                            class="btn btn-outline-light px-4"
+                            href="{{ .reference }}"
+                            target="_blank"
+                            >Visualizar</a
+                        >
+                    </div>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+        <div class="row justify-content-center py-5">
+            <div
+                class="col-12 col-xl-6 d-flex flex-column justify-content-center"
+            >
+                <a
+                    class="btn btn-lg btn-primary px-4 my-1"
+                    href="/documents/CV - Richard Fagundes.pdf"
+                    >Baixar CV</a
+                >
+            </div>
+        </div>
+    </div>
+</section>

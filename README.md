@@ -1,3 +1,3 @@
 ## My personal portfolio
 
-https://richardnfag.com
+https://richardfagundes.com

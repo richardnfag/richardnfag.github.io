@@ -1,0 +1,23 @@
+enabled: true
+id: "portfolio"
+
+content:
+  - icon: "ic_fluent_content_settings_20_regular"
+    pretitle: "Portfolio Service"
+    title: "Software Development"
+    text: "Desenvolvo soluções robustas e personalizadas que transformam ideias em aplicações funcionais. Tenho experiência em diversas linguagens de programação e frameworks modernos, além de um foco em boas práticas de desenvolvimento, testes automatizados e desenvolvimento seguro. Minha meta é entregar softwares escaláveis e eficientes que atendam às necessidades específicas de cada cliente."
+
+  - icon: "ic_fluent_arrow_flow_up_right_20_regular"
+    pretitle: "Portfolio Service"
+    title: "Infrastruture"
+    text: "Planejo, implemento e mantenho ambientes robustos com foco em alta disponibilidade, desempenho e automação. Utilizo práticas de CI/CD e DevOps para garantir a integração e entrega contínuas, otimizando o ciclo de desenvolvimento e implantação. Com forte uso de Infraestrutura como Código (IaC), ferramentas como Ansible, Terraform e Kubernetes são parte fundamental da construção e gerenciamento de infraestruturas modernas, assegurando eficiência e escalabilidade dos recursos."
+
+  - icon: "ic_fluent_data_trending_16_regular"
+    pretitle: "Portfolio Service"
+    title: "Business Intelligence"
+    text: "Transformação de dados brutos em insights valiosos para suportar decisões estratégicas. Com a utilização de ferramentas de análise de dados, dashboards e relatórios personalizados, ajudo a extrair valor dos dados para otimizar processos, identificar oportunidades de mercado e melhorar a performance geral do negócio."
+
+  - icon: "ic_fluent_weather_cloudy_20_regular"
+    pretitle: "Portfolio Service"
+    title: "Cloud Computing"
+    text: "Ofereço soluções completas em computação em nuvem, desde a migração de serviços até a implementação de arquiteturas cloud-native. Tenho experiência em diferentes provedores de nuvem, como AWS, Azure e Google Cloud, focando em otimização de custos, escalabilidade e segurança das operações na nuvem."
