@@ -1,0 +1,14 @@
+enabled: true
+id: "hero"
+
+content:
+  title: "Vamos construir uma nova **ERA**!"
+  text: "Arquitetando, desenvolvendo e escalando soluções **robustas**"
+
+  buttonPrimary:
+    label: "Conhecer meu trabalho"
+    url: "#portfolio"
+
+  buttonSecondary:
+    label: "Agendar uma reunião"
+    url: "https://calendly.com/richardfagundes"

@@ -1,0 +1,48 @@
+<section class="section testimonials py-5">
+    <div class="container">
+        <div class="row pb-5">
+            <div class="col-12">
+                {{ with .content.title }}
+                <h3 class="fs-1 fw-bold text-center text-primary pb-3">
+                    {{ . }}
+                </h3>
+                {{ end }}
+            </div>
+        </div>
+        <div class="row">
+            <div class="pb-4">
+                {{ partial "utilities/image-third.html"
+                "images/testimonials-left-quote.png" }}
+            </div>
+            {{ range $i, $e := .content.list }}
+            <div class="col-12 col-xl-4">
+                <div class="card border-0 p-4 m-2 bg-danger">
+                    <div class="card-body text-center">
+                        <img
+                            class="rounded-circle size-90 mb-4"
+                            alt="{{ $e.client }} photo"
+                            src="{{ $e.image }}"
+                        />
+                        <p class="card-text text-white text-wrap text-break">
+                            "{{ $e.text }}"
+                            <br /><br />
+                            <span class="fw-bold text-white"
+                                >{{ $e.client }}</span
+                            >
+                            <br />
+                            <small class="text-white">{{ $e.headline }}</small>
+                            <br /><br />
+                            <a
+                                href="{{ $e.source }}"
+                                target="_blank"
+                                class="btn btn-outline-light px-4"
+                                >Ver no LinkedIn</a
+                            >
+                        </p>
+                    </div>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
