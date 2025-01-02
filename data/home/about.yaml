@@ -7,6 +7,11 @@ content:
   name: "Richard Fagundes"
 
   work:
+    - title: "Analista de Sistemas"
+      company: "55PBX"
+      period: "2024 - Atualmente"
+      location: "São Paulo/SP"
+
     - title: "Desenvolvedor Python"
       company: "B2ML Sistemas"
       period: "2023"
