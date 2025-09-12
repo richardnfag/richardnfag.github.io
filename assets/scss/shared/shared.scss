@@ -21,7 +21,9 @@ table {
     margin-right: auto;
     border-collapse: separate;
     border-spacing: 0;
-    border-bottom: 1px solid #1f1f1f;
+    border: 1px solid #0a0a0a;
+    border-radius: 2px;
+    padding: 1px;
 }
 
 tr:hover {
@@ -29,7 +31,8 @@ tr:hover {
 }
 
 td {
-    border-top: 1px solid #1f1f1f;
+    border: 1px solid #1f1f1f;
+    border-radius: 2px;
     padding: 14px 16px;
     text-align: center;
     align-items: center;
