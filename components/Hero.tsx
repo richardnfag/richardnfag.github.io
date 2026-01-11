@@ -31,16 +31,24 @@ export function Hero() {
           distribuídas, seguras e orientadas a dados.
         </motion.p>
 
-        {/*<motion.div variants={fadeInUp} className="flex flex-wrap gap-4">
-          <button className="bg-[#5667B1]/80 hover:bg-[#6374B8] text-white px-8 py-4 rounded-xl font-medium flex items-center gap-2 transition-all shadow-lg shadow-[#5667B1]/20 cursor-pointer">
-            Ver Arquitetura de Projetos
-            <ArrowRight className="w-4 h-4" />
-          </button>
-          <button className="glass-button text-zinc-700 px-8 py-4 rounded-xl font-medium flex items-center gap-2 hover:text-zinc-900 cursor-pointer">
+        <motion.div variants={fadeInUp} className="flex flex-wrap gap-4">
+          <a
+            href="#expertise"
+            className="bg-[#5667B1]/80 hover:bg-[#6374B8] text-white px-8 py-4 rounded-xl font-medium flex items-center gap-2 transition-all shadow-lg shadow-[#5667B1]/20 cursor-pointer"
+          >
+            Conhecer minha expertise
+          </a>
+
+          <a
+            href="https://calendly.com/richardfagundes/30min"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="glass-button text-zinc-700 px-8 py-4 rounded-xl font-medium flex items-center gap-2 hover:text-zinc-900 cursor-pointer"
+          >
             <Calendar className="w-4 h-4" />
             Agendar reunião
-          </button>
-        </motion.div>*/}
+          </a>
+        </motion.div>
       </motion.div>
     </section>
   );
